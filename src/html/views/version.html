@@ -1,0 +1,60 @@
+<% var data = {
+  title: "Второй заголовок | Проект",
+  author: "Harrix"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- Header -->
+<div class="header">
+  <div class="container">
+   
+    <a href="index.php" class="logo">
+      <img src="../img/logos/bacteria2.svg" alt="logo" class="logo__img">
+      <div class="logo__text-box">
+        <p class="logo__text_up">Статистика</p>
+        <p class="logo__text_down">по COVID-2019</p>
+      </div>
+
+    </a>
+    
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html#yak1" class="nav__link">Мир</a></li>
+        <li class="nav__item"><a href="index.html#yak2" class="nav__link">Китай</a></li>
+        <li class="nav__item"><a href="index.html#yak3" class="nav__link">Вне Китая</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<!-- /Header -->
+<section class="versions section">
+	<div class="container">
+		<div class="versions__div">
+			<h2 class="heading-secondary versions__header">Version 1.2</h2>
+			<ol class="versions__list">
+				<li class="versions__li paragraph">Изменен футер</li>
+				<li class="versions__li paragraph">Добавлены новые страны в словарь</li>
+			</ol>
+		</div>
+		
+		<div class="versions__div">
+			<h2 class="heading-secondary versions__header">Version 1.1</h2>
+			<ol class="versions__list">
+				<li class="versions__li paragraph">Добавлены регионы России</li>
+				<li class="versions__li paragraph">Добавлены новые страны в словарь</li>
+				<li class="versions__li paragraph">Оптимизация js</li>
+			</ol>
+		</div>
+
+		<div class="versions__div">
+			<h2 class="heading-secondary versions__header">Version 1.0</h2>
+			<ol class="versions__list">
+				<li class="versions__li paragraph">Запуск сервиса в тестовом режиме</li>
+				
+			</ol>
+		</div>
+	</div>
+</section>
+
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
