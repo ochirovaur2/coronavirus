@@ -1,4 +1,4 @@
-# psd-with-new-template
+# Version 2.3
 
 
 In this project were used: BEM, Webpack, 7-1 SASS, PHP
@@ -17,3 +17,4 @@ In this project were used: BEM, Webpack, 7-1 SASS, PHP
 <br> 
 
 http://coronavirusstat-com.stackstaging.com/
+
